@@ -19,7 +19,7 @@ function checkGuesses() { //Função que verifica os palpites do usuário.
         lastResult.style.color = 'green';
         lowOrHigh.textContent = '';
         setGameOver();
-    } else if (guessCount === 100) {
+    } else if (guessCount === 50) {
         lastResult.textContent = 'FIM DE JOGO!!! Você esgotou suas tentativas!';
         lowOrHigh.textContent = '';
         setGameOver();
@@ -66,5 +66,5 @@ function resetGame() {
     guessField.value = '';
     guessField.focus();
     lastResult.style.color = 'aliceblue';
-    randomNumber = Math.floor(Math.random() * 100) + 1;
+    randomNumber = Math.floor(Math.random() * 1000000) + 1;
 }
