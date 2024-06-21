@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat Alternates");
+
+:root {
+    --maincolour: rgb(64,0,107);
+    --secondarycolour: hsl(208, 100%, 95%);
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--maincolour);
+    background: linear-gradient(204deg, rgba(64,0,107,1) 0%, rgba(79,0,82,1) 49%, rgba(0,0,0,1) 100%);
+    color: var(--secondarycolour);
+}
+
+.guessField {
+    width: 200px;
+    height: 20px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: var(--secondarycolour);
+    color: var(--maincolour);
+}
+
+.guessSubmit {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--maincolour);
+    color: var(--secondarycolour);
+    transition: all, .5s;
+}
+
+.guessSubmit:hover {
+    background-color: var(--secondarycolour);
+    color: var(--maincolour);
+}
+
+.guessSubmit:active {
+    background-color: hsl(0, 0%, 100%);
+    color: var(--maincolour);
+}
+
+.resetButton {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--maincolour);
+    color: var(--secondarycolour);
+    transition: all, .5s;
+}
+
+.resetButton:hover {
+    background-color: var(--secondarycolour);
+    color: var(--maincolour);
+}
+
+.resetButton:active {
+    background-color: hsl(0, 0%, 100%);
+    color: var(--maincolour);
+}

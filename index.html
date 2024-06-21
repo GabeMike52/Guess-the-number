@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advinhe o Número</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Advinhe o Número</h1> 
+    <p>Um número foi gerado aleatoriamente, esse número pode ser de 1 a 100, você precisa advinhar esse número em 10 tentativas para vencer o jogo!!!</p>
+    <div class="form">
+        <label for="guessField">Insira seu palpite: </label>
+        <input type="number" min="1" max="100" required id="guessField" class="guessField">
+        <input type="submit" value="Enviar palpite" class="guessSubmit">
+    </div>
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHigh"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
