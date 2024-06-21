@@ -1,4 +1,4 @@
-let randomNumber = Math.floor(Math.random() * 100) + 1; //Gera uu número aleatório entre 1 e 100. 
+let randomNumber = Math.floor(Math.random() * 1000000) + 1; //Gera uu número aleatório entre 1 e 100. 
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
 const lowOrHigh = document.querySelector('.lowOrHigh');
@@ -19,7 +19,7 @@ function checkGuesses() { //Função que verifica os palpites do usuário.
         lastResult.style.color = 'green';
         lowOrHigh.textContent = '';
         setGameOver();
-    } else if (guessCount === 10) {
+    } else if (guessCount === 100) {
         lastResult.textContent = 'FIM DE JOGO!!! Você esgotou suas tentativas!';
         lowOrHigh.textContent = '';
         setGameOver();
